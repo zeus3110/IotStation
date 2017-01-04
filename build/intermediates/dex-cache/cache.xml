@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\AndroidApp\IotStation\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ca32ad303c2695ad09eb53b52dfa4370459eacd5">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ea0c72ad507c977b52eeb011911bec8a403c0d85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\super\.gradle\caches\modules-2\files-2.1\org.twitter4j\twitter4j-core\4.0.2\6555e7c45f5db0006823731b2ddb536d481e11d1\twitter4j-core-4.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6555e7c45f5db0006823731b2ddb536d481e11d1">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\twitter4j-core-4.0.2_5058931c80500b564ea9d5cffd87cc862a5eba9c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_9e39f98bb961c405f8e5c9a86428b6e860d0213b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidApp\IotStation\app\build\intermediates\exploded-aar\com.google.android.things.contrib\driver-button\0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2a974245f595106cc97d7492a1c352874c31eee">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.things.contrib-driver-button-0.1_d1a49fbe638b7ade37109fd13672c10cabd70c90\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidApp\IotStation\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e06e76e6c8230cf3cd68fa21ee6278a89b440b11">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2de47851d7fca4682426395c57cf86d11df67f64\classes.dex" />
+    </item>
+
+</items>
