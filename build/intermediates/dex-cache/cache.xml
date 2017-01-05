@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="ca32ad303c2695ad09eb53b52dfa4370459eacd5">
+        sha1="439ccfa4e11de180c2e5e796a085857a784f74a7">
         <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ea0c72ad507c977b52eeb011911bec8a403c0d85\classes.dex" />
     </item>
     <item
@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="e06e76e6c8230cf3cd68fa21ee6278a89b440b11">
+        sha1="147a8cf140eadf22161769529b96ecd7258ecc66">
         <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2de47851d7fca4682426395c57cf86d11df67f64\classes.dex" />
     </item>
 
