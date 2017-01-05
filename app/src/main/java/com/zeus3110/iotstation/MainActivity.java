@@ -21,8 +21,8 @@ import android.os.Bundle;
 
 import com.google.android.things.contrib.driver.button.Button;
 import com.google.android.things.contrib.driver.button.ButtonInputDriver;
-import com.google.android.things.pio.Gpio;
 
+import android.os.Handler;
 import android.util.Log;
 import android.view.KeyEvent;
 
@@ -32,9 +32,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 import java.util.GregorianCalendar;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 import twitter4j.*;
 import twitter4j.conf.ConfigurationBuilder;
@@ -54,7 +51,7 @@ public class MainActivity extends Activity {
 
     // Timer
     private final int TWEET_PERIOD = 10*60*1000;    // tweet every 10min
-    Timer timer = new Timer();
+    Handler _handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,11 +101,15 @@ public class MainActivity extends Activity {
             Log.i(TAG, "Twetter Auth Setting End");
 
             Log.i(TAG, "Timer Setting Start");
-            timer.scheduleAtFixedRate(new TimerTask(){
-                @Override public void run() {
+            _handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
                     Log.i(TAG, "Timer Event Start");
                     Tweet();
-                } }, 0, TWEET_PERIOD);
+                    _handler.postDelayed(this, TWEET_PERIOD);
+
+                }
+            }, TWEET_PERIOD);
             Log.i(TAG, "Timer Setting End");
 
         } catch (IOException e) {
@@ -198,8 +199,6 @@ public class MainActivity extends Activity {
             }
         }
 
-        if(timer != null){
-            timer.cancel();
-        }
+        _handler.removeCallbacksAndMessages(null);
     }
 }
