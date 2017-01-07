@@ -80,7 +80,7 @@ public class TSL2561 implements AutoCloseable {
 
 
     /**
-     * Create a new VEML6070 sensor driver connected on the given bus.
+     * Create a new TSL2561 sensor driver connected on the given bus.
      * @param bus I2C bus the sensor is connected to.
      * @throws IOException
      */
