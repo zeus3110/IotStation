@@ -155,7 +155,6 @@ public class MainActivity extends Activity {
             tweetStr = tweetStr + "Temp: " + String.format("%.1f", temp_data)+" ℃\n";
             tweetStr = tweetStr + "Humid: " + String.format("%.1f", humid_data)+" %\n";
             tweetStr = tweetStr + "Press: " + String.format("%.1f", press_data)+" hPa\n";
-            tweetStr = tweetStr + "from #AndroidThings";
             new TweetAsyncTask(tweetStr, factory).execute();
 
         } catch (IOException e) {
