@@ -8,3 +8,9 @@ gradlew.bat
 settings.gradle
 *.iml
 app/src/main/java/com/zeus3110/iotstation/TwetterKey.java
+androidthingsdriver/libs/
+androidthingsdriver/src/
+app/libs/
+app/src/androidTest/
+app/src/main/res/drawable/
+app/src/test/
