@@ -7,4 +7,4 @@ gradlew
 gradlew.bat
 settings.gradle
 *.iml
-/app/src/main/java/com/zeus3110/iotstation/private/*.*
+/app/src/main/java/com/zeus3110/iotstation/TweetKey.java

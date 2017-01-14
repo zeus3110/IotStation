@@ -41,8 +41,6 @@ import java.util.GregorianCalendar;
 import twitter4j.*;
 import twitter4j.conf.ConfigurationBuilder;
 
-import com.zeus3110.iotstation.TwitterKey;
-
 public class MainActivity extends Activity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
