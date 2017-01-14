@@ -1,2 +1,10 @@
-/build
+.gradle/
+.idea/
+gradle/
+build/
+build.gradle
+gradlew
+gradlew.bat
+settings.gradle
+*.iml
 /app/src/main/java/com/zeus3110/iotstation/private/*.*
