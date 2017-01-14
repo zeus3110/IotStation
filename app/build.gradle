@@ -19,8 +19,13 @@ android {
     }
 }
 
+repositories {
+    maven { url 'http://raw.github.com/zeus3110/AndroidThingsDriver/master/repository/' }
+}
+
 dependencies {
     compile 'com.google.android.things.contrib:driver-button:0.1'
     provided 'com.google.android.things:androidthings:0.1-devpreview'
     compile 'org.twitter4j:twitter4j-core:4.0.2'
+    compile 'com.zeus3110.android.things:android-things-driver:0.0.1'
 }

@@ -22,6 +22,11 @@ import android.os.Bundle;
 import com.google.android.things.contrib.driver.button.Button;
 import com.google.android.things.contrib.driver.button.ButtonInputDriver;
 
+import com.zeus3110.android_things_driver.Sensor.BME280;
+import com.zeus3110.android_things_driver.Sensor.MhZ19Pwm;
+import com.zeus3110.android_things_driver.Sensor.TSL2561;
+import com.zeus3110.android_things_driver.Sensor.Veml6070;
+
 import android.os.Handler;
 import android.util.Log;
 import android.view.KeyEvent;

@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="3a3a9b6534aefac58a466a33ffff8981973ac121">
+        sha1="492963c8db74728a0be1a197855dcae8b4fe066f">
         <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ea0c72ad507c977b52eeb011911bec8a403c0d85\classes.dex" />
     </item>
     <item
@@ -21,12 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
-        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_9e39f98bb961c405f8e5c9a86428b6e860d0213b\classes.dex" />
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_4fc681b1dc27d08e5ca918061fae25730bfd7bdc\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -43,8 +43,17 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="329adcf9ed0a5475f9cd405ba190fb3fb962c94f">
+        sha1="9b16368c7c2462a9b72f40f937de40d321ac3803">
         <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2de47851d7fca4682426395c57cf86d11df67f64\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidApp\IotStation\app\build\intermediates\exploded-aar\com.zeus3110.android.things\android-things-driver\0.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="40724c4c36b3627dfa64ee2ad7b393799a184276">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.zeus3110.android.things-android-things-driver-0.0.1_3b2fd14f68551ecdd3b70d65301f6d2197836304\classes.dex" />
     </item>
 
 </items>
