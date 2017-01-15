@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 zeus3110
+ * Copyright 2017 zeus3110
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,6 +24,7 @@ import java.util.List;
 
 @SuppressWarnings("WeakerAccess")
 public class BoardDefaults {
+
     private static final String DEVICE_EDISON_ARDUINO = "edison_arduino";
     private static final String DEVICE_EDISON = "edison";
     private static final String DEVICE_RPI3 = "rpi3";
