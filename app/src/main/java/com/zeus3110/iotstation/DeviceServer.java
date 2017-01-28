@@ -221,6 +221,14 @@ public class DeviceServer {
                                 outputStream.write(res, 0, res.length);
                                 outputStream.flush();
                                 break;
+                            case "DUST":
+                                Log.i(TAG,"Dust command");
+                                float dust= mDustSensor.GetDustDensity();
+                                res_str = String.format("%.2f", dust);
+                                res = res_str.getBytes("UTF-8");
+                                outputStream.write(res, 0, res.length);
+                                outputStream.flush();
+                                break;
                             case "INP1":
                             case "INP2":
                             case "INP3":
@@ -370,7 +378,7 @@ public class DeviceServer {
             tweetStr = tweetStr + "Temp: " + String.format("%.1f", temp_data)+" ℃\n";
             tweetStr = tweetStr + "Humid: " + String.format("%.1f", humid_data)+" %\n";
             tweetStr = tweetStr + "Press: " + String.format("%.1f", press_data)+" hPa\n";
-            tweetStr = tweetStr + "Dust: " + String.format("%.2f", press_data)+" mg/㎥\n";
+            tweetStr = tweetStr + "Dust: " + String.format("%.2f", dust_data)+" mg/㎥\n";
             new TweetAsyncTask(tweetStr, factory).execute();
 
         } catch (IOException e) {
