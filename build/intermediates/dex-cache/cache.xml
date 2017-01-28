@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="4cf96aa59079742ff70194deaa22d494a2ea336c">
+        sha1="9a74595c21f70c31853786f22bba2d02e2120f9a">
         <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ea0c72ad507c977b52eeb011911bec8a403c0d85\classes.dex" />
     </item>
     <item
@@ -43,17 +43,17 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="59ed5014ad2ea6b6a37bde52a737bf6223268a98">
+        sha1="096284ac58d424eef372e387202a58e2bb4114dd">
         <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2de47851d7fca4682426395c57cf86d11df67f64\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\AndroidApp\IotStation\app\build\intermediates\exploded-aar\com.zeus3110.android.things\android-things-driver\0.0.1\jars\classes.jar"
+        jar="C:\AndroidApp\IotStation\app\build\intermediates\exploded-aar\com.zeus3110.android.things\android-things-driver\0.0.2\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="40724c4c36b3627dfa64ee2ad7b393799a184276">
-        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.zeus3110.android.things-android-things-driver-0.0.1_3b2fd14f68551ecdd3b70d65301f6d2197836304\classes.dex" />
+        sha1="32e4a3c138368a460b7808edc6456acdc40e712e">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.zeus3110.android.things-android-things-driver-0.0.2_89778fe2a7f46e6af6c452ceca8c2ae33f72e719\classes.dex" />
     </item>
 
 </items>

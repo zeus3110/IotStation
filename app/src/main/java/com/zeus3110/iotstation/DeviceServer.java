@@ -24,6 +24,7 @@ import com.zeus3110.android_things_driver.Sensor.BME280;
 import com.zeus3110.android_things_driver.Sensor.MhZ19Pwm;
 import com.zeus3110.android_things_driver.Sensor.TSL2561;
 import com.zeus3110.android_things_driver.Sensor.Veml6070;
+import com.zeus3110.android_things_driver.Sensor.DSM501A;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -53,6 +54,7 @@ public class DeviceServer {
     private TSL2561 mLumiSensor;
     private BME280 mTempSensor;
     private MCP23008 mIOExpander;
+    private DSM501A mDustSensor;
     private SB1602B mLCD;
 
     private ConfigurationBuilder cb;
@@ -73,6 +75,9 @@ public class DeviceServer {
 
         Log.i(TAG, "Registering PWM Input CO2 Sensor driver");
         mCO2Sensor = new MhZ19Pwm(BoardDefaults.getGPIOForPwmIn());
+
+        Log.i(TAG, "Registering PWM Input Dust Sensor driver");
+        mDustSensor = new DSM501A("BCM4");
 
         Thread thread = new Thread(new Runnable(){
             public void run(){
@@ -331,6 +336,7 @@ public class DeviceServer {
         float humid_data;
         float uv_data;
         int co2_data;
+        float dust_data;
         String tweetStr;
         Log.i(TAG, "Tweet Event");
         try{
@@ -340,6 +346,7 @@ public class DeviceServer {
             temp_data = mTempSensor.readTemperature();
             press_data = mTempSensor.readPressure();
             humid_data = mTempSensor.readHumidity();
+            dust_data = mDustSensor.GetDustDensity();
 
             Log.i(TAG,"Sensor Data: "+String.valueOf(uv_data)+" uW/cm²");
             Log.i(TAG,"Luminance Data: "+String.valueOf(lux_data)+" lux");
@@ -347,6 +354,7 @@ public class DeviceServer {
             Log.i(TAG,"Temperature Data: "+String.valueOf(temp_data)+" ℃");
             Log.i(TAG,"Humidity Data: "+String.valueOf(humid_data)+" %");
             Log.i(TAG,"Pressure Data: "+String.valueOf(press_data)+" hPa");
+            Log.i(TAG,"Dust Data: "+String.valueOf(dust_data)+" mg/㎥");
 
             // obtain time (JST)
             Date date = new GregorianCalendar().getTime();
@@ -362,6 +370,7 @@ public class DeviceServer {
             tweetStr = tweetStr + "Temp: " + String.format("%.1f", temp_data)+" ℃\n";
             tweetStr = tweetStr + "Humid: " + String.format("%.1f", humid_data)+" %\n";
             tweetStr = tweetStr + "Press: " + String.format("%.1f", press_data)+" hPa\n";
+            tweetStr = tweetStr + "Dust: " + String.format("%.2f", press_data)+" mg/㎥\n";
             new TweetAsyncTask(tweetStr, factory).execute();
 
         } catch (IOException e) {

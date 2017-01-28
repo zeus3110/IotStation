@@ -22,24 +22,12 @@ import android.os.Bundle;
 import com.google.android.things.contrib.driver.button.Button;
 import com.google.android.things.contrib.driver.button.ButtonInputDriver;
 
-import com.zeus3110.android_things_driver.Sensor.BME280;
-import com.zeus3110.android_things_driver.Sensor.MhZ19Pwm;
-import com.zeus3110.android_things_driver.Sensor.TSL2561;
-import com.zeus3110.android_things_driver.Sensor.Veml6070;
-
 import android.os.Handler;
 import android.util.Log;
 import android.view.KeyEvent;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.TimeZone;
-import java.util.GregorianCalendar;
 
-import twitter4j.*;
-import twitter4j.conf.ConfigurationBuilder;
 
 public class MainActivity extends Activity {
     private static final String TAG = MainActivity.class.getSimpleName();
