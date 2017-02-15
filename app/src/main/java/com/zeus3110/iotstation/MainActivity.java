@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
     private ButtonInputDriver mButtonInputDriver;
 
     public DeviceServer deviceServer;
+    public IRCommandServer irCommandServer;
 
     // Timer
     private final int TWEET_PERIOD = 10*60*1000;    // tweet every 10min
@@ -43,7 +44,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i(TAG, "Starting ButtonActivity");
+        Log.i(TAG, "Starting Activity");
 
         try {
             Log.i(TAG, "Registering button driver");
@@ -56,8 +57,10 @@ public class MainActivity extends Activity {
             mButtonInputDriver.register();
 
             Log.i(TAG, "Registered Drivers");
-            deviceServer = new DeviceServer();
+            irCommandServer = new IRCommandServer();
 
+            Log.i(TAG, "Registered IR Drivers");
+            deviceServer = new DeviceServer();
 
             Log.i(TAG, "Timer Setting Start");
             _handler.postDelayed(new Runnable() {

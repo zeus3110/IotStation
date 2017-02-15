@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="f9a172cef3d8d24f089a112a1dd4f05ebb8964d8">
+        sha1="a6ad829aaaeee18d5ce55d1c69dfcd77dfc6df2f">
         <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ea0c72ad507c977b52eeb011911bec8a403c0d85\classes.dex" />
     </item>
     <item
@@ -21,6 +21,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\AndroidApp\IotStation\app\build\intermediates\exploded-aar\com.zeus3110.android.things\android-things-driver\0.0.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d0efac07f375e36a2b76aa7e06a8cc7d8f4ee061">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.zeus3110.android.things-android-things-driver-0.0.3_321fc4afa33210695011b9dc9ebc2d7b4d853591\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
         jumboMode="true"
         optimize="true"
@@ -30,12 +39,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\AndroidApp\IotStation\app\build\intermediates\exploded-aar\com.google.android.things.contrib\driver-button\0.1\jars\classes.jar"
+        jar="C:\AndroidApp\IotStation\app\build\intermediates\exploded-aar\com.google.android.things.contrib\driver-button\0.2\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="f2a974245f595106cc97d7492a1c352874c31eee">
-        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.things.contrib-driver-button-0.1_d1a49fbe638b7ade37109fd13672c10cabd70c90\classes.dex" />
+        sha1="f00773960a5fa3f32fd6e6c35c199c22cf0562f3">
+        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.things.contrib-driver-button-0.2_a8a99a5f82904b0360276768120e4d9290bec80f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -43,17 +52,8 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="83355e85cea5b75606b8a2a4f8dab33ffcee390c">
+        sha1="7522496f18f5a5b1b09c8ba021df24a71bf3bd6f">
         <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2de47851d7fca4682426395c57cf86d11df67f64\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\AndroidApp\IotStation\app\build\intermediates\exploded-aar\com.zeus3110.android.things\android-things-driver\0.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="32e4a3c138368a460b7808edc6456acdc40e712e">
-        <dex dex="C:\AndroidApp\IotStation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.zeus3110.android.things-android-things-driver-0.0.2_89778fe2a7f46e6af6c452ceca8c2ae33f72e719\classes.dex" />
     </item>
 
 </items>

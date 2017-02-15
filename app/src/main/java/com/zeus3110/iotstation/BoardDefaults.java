@@ -84,6 +84,20 @@ public class BoardDefaults {
         }
     }
 
+    public static String getSPIPort() {
+        switch (Build.DEVICE) {
+            // same for Edison Arduino breakout and Edison SOM
+            case DEVICE_EDISON:
+                return "SPI2";
+            case DEVICE_RPI3:
+                return "SPI0.0";
+            case DEVICE_NXP:
+                return "SPI3_0";
+            default:
+                throw new IllegalStateException("Unknown Build.DEVICE " + Build.DEVICE);
+        }
+    }
+
     private static String getBoardVariant() {
         if (!sBoardVariant.isEmpty()) {
             return sBoardVariant;
